@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-inner-content{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar{
+    background-color:rgb(249, 249, 237);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px rgb(249, 249, 237) ;
+    z-index: 99;
+}
+
+.navbar>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo{
+    color:darkgreen
+}
+
+.logo span{
+    color: rgb(158, 224, 122);
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-icon-container{
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon-container img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.nav-icon-container img:first-child{
+    margin-right: 1rem;
+}
+
+nav ul li{
+    color: black;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+   
+nav ul li:hover{
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+
+.menu-button{
+    display:none;
+
+}
+
+.banner{
+    width: 1600px;
+}
+
+.carrinho{
+    width: 50px;
+}
+
+@media (max-width: 800px){
+
+    .logo{
+        font-size: 1.2rem;
+    } 
+
+   .header-bottom-side{
+       flex-direction: column;
+       text-align: center;
+       padding-top: 4rem;
+}
+}
+.page-inner-content{
+    max-width: 1280px;
+    margin:0 auto;
+}
+
+.cols-4{
+    gap: 1rem;
+    display:flex;
+    margin-bottom: 4rem;
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+.cols>*{
+    cursor: pointer;
+}
+
+.cols>*:hover{
+    transform: translateY(-5px);
+    margin-top: 4rem;
+    font-size: 1.8rem;
+}
+
+.section-title{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.8rem;
+}
+
+.subtitle-underline{
+    width: 100px;
+    height: 5px;
+    background:rgb(0, 100, 0);
+    border-radius: 9999px;
+    margin: 8PX;
+}
+
+.arroz{
+    width: 160px;
+    height: 250px;
+    flex-direction: column;
+    margin-left: 32px;
+}
+
+.oleo{
+    width: 81px;
+    height: 250px;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.sal{
+    width: 160px;
+    height: 250px;
+    flex-direction: column;
+    margin-left: 32px;
+}
+
+.leite{
+    width: 100px;
+    height: 250px;
+    flex-direction: column;
+    margin-left: 58px;
+
+}
+
+.button{
+    color: rgb(0, 100, 0);
+    text-align: center;
+    border-radius: green solid 1px;
+    height: 20px;
+    width: 220px;
+    border: 2px green solid;
+    float: left ;
+    margin: auto;
+}
+
+p{
+    text-align: center;
+}
+
